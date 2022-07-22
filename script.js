@@ -27,9 +27,7 @@ function checkwin(){
             document.querySelector('.info').innerText=boxtext[e[0]].innerText+" Won"
             isgameover=true;
             document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width="200px";
-            {
             win.play();
-            }
         }
     })
 }
@@ -59,6 +57,5 @@ reset.addEventListener('click',function reset(){
         isgameover=false;
         document.getElementsByClassName("info")[0].innerText="Turn for "+turn;
         document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width="0px";
-        win.pause();
     })
 })
